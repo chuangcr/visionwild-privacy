@@ -17,15 +17,19 @@
 <body>
 
 <h1>隱私權政策</h1>
-<p class="date">最後更新：2026 年 5 月</p>
-<p>本政策適用於 <strong>VisionWild Pet</strong>（以下簡稱「本應用程式」），由 studio.visionwild 開發。使用本應用程式即表示您同意本政策的條款。</p>
+<p class="date">最後更新：2026 年 6 月</p>
+<p>本政策適用於 <strong>VisionWild Pet</strong>（以下簡稱「本應用程式」），由 VisionWild Studio 開發。使用本應用程式即表示您同意本政策的條款。</p>
 
 <h2>1. 我們收集哪些資料</h2>
 <ul>
-  <li><strong>Google 帳號資訊（選擇性）：</strong>若您使用 Google 登入，我們會取得您的顯示名稱與電子郵件地址，僅用於識別帳號。</li>
-  <li><strong>匿名帳號 ID：</strong>若您未使用 Google 登入，系統會自動產生一個匿名的 Firebase UID，不包含任何個人資訊。</li>
-  <li><strong>遊戲資料：</strong>包含寵物名稱、等級、步數、成就、飢餓值等遊戲進度，用於雲端同步與排行榜功能。</li>
+  <li><strong>Google 帳號資訊（選擇性）：</strong>若您使用 Google 登入啟用雲端同步，我們會取得您的顯示名稱與電子郵件地址，僅用於識別帳號。</li>
+  <li><strong>匿名帳號 ID：</strong>若您未使用 Google 登入，系統會自動產生一個匿名的 Firebase UID，不包含任何個人資訊，用於排行榜上傳。</li>
+  <li><strong>遊戲資料：</strong>包含寵物名稱、等級、成就、飢餓值、糖果、罐頭數量等遊戲進度，用於雲端同步與排行榜功能。</li>
+  <li><strong>步數資料：</strong>透過裝置內建的 Android STEP_COUNTER 感應器讀取，僅用於遊戲互動（如散步任務、健康統計），預設儲存於本機；僅當您登入 Google 並啟用同步時，才會以「累計步數」形式同步至雲端。我們不會收集您的位置或移動軌跡。</li>
+  <li><strong>購買紀錄：</strong>若您透過 Google Play 進行內購（食物罐頭、改名券、復活水晶、移除廣告等），我們會記錄購買的商品種類與時間，用於發放對應的遊戲內物品。付款資訊由 Google Play 處理，本應用程式不會接觸您的信用卡或付款方式。</li>
+  <li><strong>意見回饋資料：</strong>當您主動透過應用程式內「回報 Bug / 建議」表單聯絡我們時，我們會收集您在表單中填寫的姓名、電子郵件（選填）與回饋內容，僅用於回應您的問題與改善應用程式品質。</li>
   <li><strong>裝置識別碼（playerTag）：</strong>一組隨機產生的字元，用於排行榜顯示，不包含任何個人識別資訊。</li>
+  <li><strong>Firebase SDK 自動收集資料：</strong>Firebase 服務可能自動收集 IP 位址、裝置型號、作業系統版本、應用程式版本等技術資訊，用於服務運作與安全性監控。詳情請參閱 <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase 隱私權說明</a>。</li>
 </ul>
 
 <h2>2. 我們如何使用資料</h2>
@@ -33,30 +37,55 @@
   <li>跨裝置同步您的遊戲進度（需登入 Google）。</li>
   <li>顯示全球排行榜。</li>
   <li>防止遊戲資料遭到竄改（反作弊機制）。</li>
+  <li>發放內購商品至您的遊戲帳號。</li>
+  <li>回應您透過回饋表單提交的問題。</li>
   <li>我們<strong>不會</strong>將您的資料出售或提供給第三方廣告商。</li>
 </ul>
 
 <h2>3. 廣告</h2>
-<p>本應用程式使用 <strong>Google AdMob</strong> 顯示獎勵廣告。AdMob 可能依據您的裝置識別碼提供個人化廣告。您可參閱 <a href="https://policies.google.com/privacy" target="_blank">Google 隱私權政策</a> 了解詳情。</p>
+<p>本應用程式使用 <strong>Google AdMob</strong> 顯示獎勵廣告（看廣告可復活寵物）。AdMob 可能依據您的裝置識別碼提供個人化廣告。您可參閱 <a href="https://policies.google.com/privacy" target="_blank">Google 隱私權政策</a> 了解詳情。若您購買「永久移除廣告」項目，本應用程式將停止顯示任何廣告。</p>
 
-<h2>4. 資料儲存</h2>
+<h2>4. 應用程式權限說明</h2>
+<ul>
+  <li><strong>顯示在其他應用程式上層（SYSTEM_ALERT_WINDOW）：</strong>用於顯示桌面寵物動畫。</li>
+  <li><strong>前景服務（FOREGROUND_SERVICE_SPECIAL_USE）：</strong>讓寵物在背景持續活動並提供休息提醒。</li>
+  <li><strong>通知（POST_NOTIFICATIONS）：</strong>顯示寵物狀態與休息提醒通知。</li>
+  <li><strong>體能活動（ACTIVITY_RECOGNITION）：</strong>讀取步數感應器數值，用於遊戲互動。</li>
+  <li><strong>網路（INTERNET）：</strong>雲端同步、排行榜、廣告顯示。</li>
+</ul>
+
+<h2>5. 資料儲存</h2>
 <ul>
   <li>遊戲資料儲存於您的裝置本機（EncryptedSharedPreferences，AES-256 加密）。</li>
   <li>雲端同步資料儲存於 Google Firebase Firestore（美國伺服器）。</li>
   <li>我們採用 Firebase Authentication 管理登入，不自行儲存密碼。</li>
 </ul>
 
-<h2>5. 資料保留與刪除</h2>
-<p>您可隨時要求刪除帳號資料。請透過下方聯絡方式提出請求，我們將在 30 天內處理。</p>
+<h2>6. 資料保留與刪除</h2>
+<p>您可隨時要求刪除帳號資料。刪除方式：</p>
+<ul>
+  <li><strong>本機資料：</strong>在應用程式內登出 Google 帳號，本機所有遊戲進度將立即重置。</li>
+  <li><strong>雲端資料：</strong>請寄信至下方聯絡信箱，註明欲刪除的 Google 帳號電子郵件，我們將在 30 天內處理。</li>
+</ul>
+<p>未登入的匿名 UID 資料若超過 365 天未使用，將自動清除。</p>
 
-<h2>6. 兒童隱私</h2>
-<p>本應用程式適合一般大眾使用，我們不會故意收集 13 歲以下兒童的個人資料。</p>
+<h2>7. 兒童隱私</h2>
+<p>本應用程式適合一般大眾使用（13 歲以上），我們不會故意收集 13 歲以下兒童的個人資料。若您發現孩童在未經您同意的情況下提供了個人資料，請聯絡我們，我們將立即刪除相關資料。</p>
 
-<h2>7. 政策變更</h2>
-<p>若本政策有重大變更，我們將透過應用程式內通知告知用戶。繼續使用本應用程式即視為接受更新後的政策。</p>
+<h2>8. 您的權利</h2>
+<p>您有權：</p>
+<ul>
+  <li>要求存取我們持有的您的個人資料。</li>
+  <li>要求更正不正確的資料。</li>
+  <li>要求刪除您的資料（見第 6 條）。</li>
+  <li>撤回對資料收集的同意（即登出 Google 帳號）。</li>
+</ul>
 
-<h2>8. 聯絡我們</h2>
-<p>如對本政策有任何疑問，請聯絡：<a href="mailto:john608440227@gmail.com">john608440227@gmail.com</a></p>
+<h2>9. 政策變更</h2>
+<p>若本政策有重大變更，我們將更新本頁面並修改「最後更新」日期。建議您不定期回來查看最新版本。繼續使用本應用程式即視為接受更新後的政策。</p>
+
+<h2>10. 聯絡我們</h2>
+<p>如對本政策有任何疑問或想行使上述權利，請聯絡：<a href="mailto:john608440227@gmail.com">john608440227@gmail.com</a></p>
 
 </body>
 </html>
